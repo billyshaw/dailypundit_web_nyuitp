@@ -1,0 +1,247 @@
+/*
+Theme Name: 
+Theme URI:
+Author: DevelPixel
+Author URI: http://wordpress.org/
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+ @import url(http://fonts.googleapis.com/css?family=Roboto:500,300,900,700);
+ body {
+    background: #FDFEFF;
+    overflow-y:scroll;
+}
+#header {
+    border-bottom: 1px solid #5f6c7d;
+    border-top: none;
+    color: #FAFBFC;
+    background: #404853;
+}
+.headerin {
+    padding: 10px 10px;
+    border-right: 1px solid #5f6c7d;
+    border-left: 1px solid #5f6c7d;
+    display: inline-table;
+    width: 100%;
+    position: relative;
+}
+.headerin .logo {
+    margin: 5px 0;
+}
+.headerin h1 {
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    text-align: right;
+    margin-top: 15px;
+}
+.content {
+    border: 1px solid #F0F0F0;
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
+    background: #FFF;
+}
+p {
+    font-family:'Roboto', sans-serif;
+}
+/*
+    [ SIDEBAR ]
+*/
+ #sidebar {
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 13px;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+#sidebar .nav-toggle {
+    font-size: 35px;
+    color: #333;
+    margin-left: 15px;
+}
+#sidebar ul {
+    padding-left: 0;
+}
+#sidebar ul li {
+    border-bottom: 1px solid #F0F0F0;
+}
+#sidebar ul li a {
+    color: #222;
+    padding: 8px 15px;
+    display: block;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#sidebar ul li.active a {
+    background: #FAFAFB;
+}
+#sidebar ul li a:hover {
+    text-decoration: none;
+    background: #FAFAFB;
+}
+/*
+    [ MAIN CONTENT ]
+*/
+ #post {
+    padding-top: 10px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    border-left: 1px solid #F0F0F0;
+    padding-bottom: 40px;
+    min-height: 500px;
+}
+#post .post {
+    padding-right: 15px;
+}
+#post h1, #post h2, #post h3, #post h4, #post h5, #post h6 {
+    font-family:'Roboto', sans-serif;
+    color: #404853;
+}
+#post h1.title {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+#post h2.title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+#post h3.title {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+#post p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+#post p a {
+    color: #f7941d;
+    padding-bottom: 1px;
+    border-bottom: 1px dotted #f7941d;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#post p a:hover {
+    text-decoration: none;
+    color: #404853;
+    border-bottom: 1px solid #404853;
+}
+#post ul.styled{
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+}
+#post ul.styled li{
+    position: relative;
+    padding-left: 20px;
+}
+#post ul.styled li:before{
+    content: '\f10c';
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: 0;
+    margin-top: 7px;
+    font-size: 9px;
+}
+#post li a{
+    line-height: 24px;
+    color:#404853;
+}
+#post .syntaxhighlighter .line.alt2 {
+    background-color: #F9F9F9 !important;
+}
+.list-tree{
+    padding: 15px;
+    border:1px dotted #DADADA;
+    background: #FEFEFE;
+
+}
+.list-tree ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+}
+.list-tree li {
+    list-style-type: none;
+    border-left: 1px solid #999;
+    margin-left: 1em;
+    line-height: 30px;
+}
+.list-tree li div {
+    padding-left: 1em;
+    position: relative;
+}
+.list-tree li div span{
+    padding-left: 18px;
+}
+.list-tree li div span:before{
+    font-family:'FontAwesome';
+    position: absolute;
+    width: 13px;
+    text-align: right;
+    top: 0;
+    left: 15px;
+    bottom: 50%;
+}
+.list-tree li div span.folder::before {
+    content:'\f114';
+}
+.list-tree li div span.folder-open::before {
+    content:'\f115';
+}
+.list-tree li div span.file::before {
+    content:'\f0f6';
+}
+.list-tree li div::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -1px;
+    bottom: 50%;
+    width: 0.75em;
+    border: 1px solid #999;
+    border-top: 0 none transparent;
+    border-right: 0 none transparent;
+}
+.list-tree ul > li:last-child {
+    border-left: 1px solid transparent;
+}
+footer {
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 20px;
+}
+/* MEDIA QUERIES */
+ @media (max-width: 768px) {
+    #sidebar {
+        padding-right: 15px;
+    }
+    .headerin .logo img {
+        display: block;
+        margin: 0 auto;
+    }
+    .headerin .pull-right {
+        float: none !important;
+    }
+    .headerin h1 {
+        text-align: center;
+        display: block;
+    }
+}
